@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ª Festa da Coxinha de Limeira</title>
+    <link rel="icon" type="image/x-icon" href="./Imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta property="og:url" content="http://webnetserver.com.br/festadacoxinha/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2ª Festa da Coxinha de Limeira" />
+    <meta property="og:description" content="A 2ª FESTA DA COXINHA DE LIMEIRA é promovida pela Prefeitura de Limeira através da Secretaria Municipal de Cultura ocorrerá nos dias 15, 16, 17 e 18 de Setembro no Parque Cidade de Limeira. Com um total de 34 horas o evento contará com 27 diferentes receitas de coxinhas selecionadas previamente entre produtores limeirenses, além de atrações musicais que ocorrerão simultaneamente em dois palcos e área kids." />
+    <meta property="og:image" content="https://webnetserver.com.br/festadacoxinha/Imagens/bannerTopo.jpg" />
+    <script src="script.js" defer></script>
+    <script src="galeria.js" defer></script>
+</head>
+<body>
+    <div class="white-board">
+        <div class="white-board-img">
+            <img />
+            <iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="close-board" onclick="closeImage()">
+            <div class="line01 menu-line"></div>
+            <div class="line02 menu-line"></div>
+        </div>
+        <div class="next-board" onclick="nextImage()">
+            <div class="line01 menu-line"></div>
+            <div class="line02 menu-line"></div>
+        </div>
+        <div class="previous-board" onclick="previousImage()">
+            <div class="line01 menu-line"></div>
+            <div class="line02 menu-line"></div>
+        </div>
+        <div class="tamanho-imagem">
+            <a target="_blank">
+                ABRIR EM TELA CHEIA
+            </a>
+        </div>
+    </div>
+    <div class="menu-nav-topo">
+        <div class="fundo-menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+    </div>
+    <div class="brasao-nav">
+        <img src="./Imagens/brasao.png" alt="Brasão de Limeira" class="brasao-topo-img">
+    </div>
+    <header>
+        <div class="bannerTopo">
+            <img src="./Imagens/brasao.png" alt="Brasão de Limeira" class="brasao-topo-img">
+            <a href="index.html"><img src="./Imagens/bannerTopo.jpg" class="banner-topo-img"></a>
+        </div>
+    </header>
+    <div class="section-nav">
+        <nav>
+            <div class="wrapper wrapper-header">
+                <div class="menuTopo">
+                    <ul class="menuTopo-lista">
+                        <li><a onclick="openImage('mapaFestaGrande.jpg')">MAPA DA FESTA</a></li>
+                        <li><a onclick="openImage('tabelaDePrecos.jpg')">COXINHAS</a></li>
+                        <li><a onclick="openIframe('www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.420193815133!2d-47.41564770000001!3d-22.5633824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88066db5f4dcd%3A0x3491ab8491d6ac66!2sParque%20Cidade%20de%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1662825662386!5m2!1spt-BR!2sbr')">COMO CHEGAR</a></li>
+                        <li><a href="programacao-completa.html">ATRAÇÕES</a></li>
+                        <li><a href="index.html#historia">HISTÓRIA DA COXINHA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hr"></div>
+    <section class="saiba-mais-page" id="conteudo">
+        <div class="wrapper">
+            <h1>Galeria de Fotos</h1>
+            <div id="galeria-de-fotos"></div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <div class="hr"></div>
+        <div class="wrapper">
+            <div class="rodape-grid">
+                <div class="rodape-item01">
+                    <h4><a href="index.html#rodape">2ª FESTA DA COXINHA DE LIMEIRA</a></h4>
+                    <div class="sociais">
+                        <a href="https://www.instagram.com/prefeituralimeira/" target="_blank"><div class="instagram"></div></a>
+                        <a href="https://www.facebook.com/prefeituralimeira" target="_blank"><div class="facebook"></div></a>
+                        <a href="https://www.youtube.com/PrefLimeira" target="_blank"><div class="youtube"></div></a>
+                    </div>
+                </div>
+                <div class="rodape-item02 clicavel">
+                    <h4>MAPA DO SITE</h4>
+                    <a href="index.html#coxinhas"><p>Coxinhas</p></a>
+                    <a href="index.html#saiba-mais"><p>Saiba Mais</p></a>
+                    <a href="index.html#atracoes"><p>Atrações</p></a>
+                    <a href="index.html#mapa"><p>Mapa da Festa</p></a>
+                </div>
+                <div class="rodape-item03 clicavel">
+                    <h4>&nbsp;</h4>
+                    <a onclick="openIframe('www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.420193815133!2d-47.41564770000001!3d-22.5633824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88066db5f4dcd%3A0x3491ab8491d6ac66!2sParque%20Cidade%20de%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1662825662386!5m2!1spt-BR!2sbr')"><p>Como Chegar</p></a>
+                    <a href="index.html#historia"><p>História da Coxinha</p></a>
+                    <a href="index.html#fotos"><p>Galeria de Fotos</p></a>
+                </div>
+                <!-- <div class="rodape-item04 clicavel">
+                    <h4>OUTROS</h4>
+                    <p>Ajuda</p>
+                    <p>Privacidade</p>
+                </div> -->
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ª Festa da Coxinha de Limeira</title>
+    <link rel="icon" type="image/x-icon" href="./Imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link title="CSS Sliders" rel="stylesheet" href="slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://webnetserver.com.br/festadacoxinha/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2ª Festa da Coxinha de Limeira" />
+    <meta property="og:description" content="A 2ª FESTA DA COXINHA DE LIMEIRA é promovida pela Prefeitura de Limeira através da Secretaria Municipal de Cultura ocorrerá nos dias 15, 16, 17 e 18 de Setembro no Parque Cidade de Limeira. Com um total de 34 horas o evento contará com 27 diferentes receitas de coxinhas selecionadas previamente entre produtores limeirenses, além de atrações musicais que ocorrerão simultaneamente em dois palcos e área kids." />
+    <meta property="og:image" content="https://webnetserver.com.br/festadacoxinha/Imagens/bannerTopo.jpg" />
+    <script src="script.js" defer></script>
+    <script src="galeria.js" defer></script>
+    <script src="slide.js" defer></script>
+</head>
+<body>
+    <div class="white-board">
+        <div class="white-board-img">
+            <img />
+            <iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="close-board" onclick="closeImage()">
+            <div class="line01 menu-line"></div>
+            <div class="line02 menu-line"></div>
+        </div>
+        <div class="tamanho-imagem">
+            <a target="_blank">
+                ABRIR EM TELA CHEIA
+            </a>
+        </div>
+    </div>
+    <div class="menu-nav-topo">
+        <div class="fundo-menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+        <div class="menu-line" onclick="openMenu()"></div>
+    </div>
+    <div class="brasao-nav">
+        <img src="./Imagens/brasao.png" alt="Brasão de Limeira" class="brasao-topo-img">
+    </div>
+    <header>
+        <div class="bannerTopo">
+            <img src="./Imagens/brasao.png" alt="Brasão de Limeira" class="brasao-topo-img">
+            <img src="./Imagens/bannerTopo.jpg" class="banner-topo-img">
+        </div>
+    </header>
+    <div class="section-nav">
+        <nav>
+            <div class="wrapper wrapper-header">
+                <div class="menuTopo">
+                    <ul class="menuTopo-lista">
+                        <li><a onclick="openImage('mapaFestaGrande.jpg')">MAPA DA FESTA</a></li>
+                        <li><a onclick="openImage('tabelaDePrecos.jpg')">COXINHAS</a></li>
+                        <li><a onclick="openIframe('www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.420193815133!2d-47.41564770000001!3d-22.5633824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88066db5f4dcd%3A0x3491ab8491d6ac66!2sParque%20Cidade%20de%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1662825662386!5m2!1spt-BR!2sbr')">COMO CHEGAR</a></li>
+                        <li><a href="programacao-completa.html">ATRAÇÕES</a></li>
+                        <li><a href="#historia">HISTÓRIA DA COXINHA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hr"></div>
+    <section class="coxinhas-precos" id="coxinhas">
+        <div class="wrapper">
+            <div class="espacamento"></div>
+            <center>
+                <h1>SUA BOCA JÁ ESTÁ CHEIA D'ÁGUA!</h1>
+                <p>Pode ser frita ou assada, sendo a primeira opção a mais tradicional, porém, 
+                para quem busca uma versão mais saudável, a segunda também cai muito
+                bem. Os recheios também podem variar muito, como com frango, carne,
+                legumes e até doce de leite.
+                <br>O que realmente importa é saborear esse quitute.</p>
+            </center>
+
+            <div class="slider-wrapper"></div>
+
+            <div class="setas">
+                <div class="next-tabela" onclick="nextCard('-')">
+                    <div class="line01 menu-line"></div>
+                    <div class="line02 menu-line"></div>
+                </div>
+                <div class="previous-tabela" onclick="nextCard('+')">
+                    <div class="line01 menu-line"></div>
+                    <div class="line02 menu-line"></div>
+                </div>
+            </div>
+                <div class="tabela-precos" id="precos">
+                    <a onclick="openImage('tabelaDePrecos.jpg')">
+                        SABORES E TABELA DE PREÇOS
+                    </a>
+                </div>
+            <div class="espacamento"></div>
+        </div>
+    </section>
+    <section class="section-saiba-mais" id="saiba-mais">
+        <div class="hr"></div>
+        <div class="wrapper">
+            <div class="espacamento-duplo"></div>
+            <div class="article-saiba-mais">
+                <div class="article-img"></div>
+                <div class="article-text article-text-saiba">
+                    <h1>DE LIMEIRA PARA O MUNDO</h1>
+                    <p>
+                        A 2ª FESTA DA COXINHA DE LIMEIRA é promovida pela Prefeitura de
+                        Limeira através da Secretaria Municipal de Cultura ocorrerá nos dias 15,
+                        16, 17 e 18 de Setembro no Parque Cidade de Limeira. Com um total de
+                        34 horas o evento contará com 27 diferentes receitas de coxinhas
+                        selecionadas previamente entre produtores limeirenses, além de
+                        atrações musicais que ocorrerão simultaneamente em dois palcos e
+                        área kids. O evento busca gerar cultura e entretenimento à população,
+                        valorizar a história desta iguaria popular que faz parte também da
+                        história de Limeira, incentivando os comerciantes locais e o turismo.
+                    </p>
+                    <div class="espacamento"></div>
+                    <div class="saiba-mais">
+                        <a href="saiba-mais.html">
+                            SAIBA MAIS
+                        </a>
+                    </div>
+                    <div class="espacamento-duplo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-atracoes" id="atracoes">
+        <div class="atracoes-img"></div>
+        <div class="hr"></div>
+        <div class="wrapper">
+            <div class="espacamento-duplo"></div>
+            <div class="article-text">
+                <center>
+                    <h1>ATRAÇÕES</h1>
+                    <p>
+                        Festa da Coxinha de Limeira contará com dois palcos que receberão 8 atrações
+                        musicais de diferentes estilos por dia de evento.
+                        <br>Ampla área kids e praça de alimentação.
+                    </p>
+                </center>
+            </div>
+            <div class="espacamento"></div>
+            <div class="atracoes-info">
+                <div class="atracoes-info-circle">
+                    <p class="quantidade">4</p>
+                    <p class="info">DIAS DE EVENTO</p>
+                </div>
+                <div class="atracoes-info-circle">
+                    <p class="quantidade">34</p>
+                    <p class="info">HORAS DE EVENTO</p>
+                </div>
+                <div class="atracoes-info-circle">
+                    <p class="quantidade">27</p>
+                    <p class="info">SABORES DE COXINHA</p>
+                </div>
+                <div class="atracoes-info-circle">
+                    <p class="quantidade">2</p>
+                    <p class="info">PALCOS</p>
+                </div>
+            </div>
+            <div class="programacao-completa">
+                <a href="programacao-completa.html">
+                    PROGRAMAÇÃO COMPLETA
+                </a>
+            </div>
+        </div>
+        <div class="espacamento-duplo"></div>
+        <div class="hr hr02"></div>
+    </section>
+    <section class="section-mapa" id="mapa">
+        <a onclick="openImage('mapaFestaGrande.jpg')">
+            <img src="./Imagens/mapaFesta.jpg" alt="Mapa da Festa">
+        </a>
+    </section>
+    <section class="section-historia" id="historia">
+        <div class="hr"></div>
+        <div class="historia-img"></div>
+        <div class="wrapper">
+            <div class="espacamento"></div>
+            <div class="historia-grid">
+                <div class="historia-grid-left">
+                    <div class="historia-fundo-texto">
+                        <h1>
+                            CONHEÇA A HISTÓRIA DA COXINHA,
+                            O SALGADO MAIS QUERIDO DO BRASIL
+                        </h1>
+                        <p>
+                            DIZ A LENDA...<br><br>
+                            As lendas podem ter seu fundo e sempre são transmitidas de
+                            geração para geração, de forma oral. Elas, geralmente, tentam oferecer
+                            explicações para acontecimentos que não têm fundamento científico,
+                            combinam fatos com base real com aqueles irreais. Há de se considerar que
+                            uma lenda não significa uma mentira, mas também não significa uma
+                            verdade. Trata-se, portanto, de uma história inventada, que sobrevive na
+                            memória das pessoas e contagia a comunidade. Sobre a possível origem da
+                            coxinha em Limeira, narra-se que em meados do século XIX o Imperador 
+                            Dom Pedro II e a imperatriz Thereza Cristina, e mais tarde o Imperador com
+                            sua filha a Princesa Isabel, seu esposo Conde D'Eu e os três filhos, passaram
+                            por Limeira e fizeram pouso na Fazenda Morro Azul.
+                        </p>
+                    </div>
+                    <div class="espacamento"></div>
+                    <!-- <div class="veja-mais">
+                        <a href="#">
+                            VEJA MAIS
+                        </a>
+                    </div> -->
+                    <div class="espacamento"></div>
+                </div>
+                <div class="historia-grid-right">
+                    <div class="historia-grid-img historia-img01"></div>
+                    <div class="historia-grid-img historia-img02"></div>
+                    <div class="historia-grid-img historia-img03"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fotos" id="fotos">
+        <div class="hr"></div>
+        <div class="wrapper">
+            <h3>GALERIA DE FOTOS</h3>
+            <div class="galeria-fotos">
+                <img class="galeria-fotos-img fotos-img01" src="./Imagens/coxinhaFrangoClassica3.jpg" onclick="openImage('coxinhaFrangoClassica3.jpg')"></img>
+                <img class="galeria-fotos-img fotos-img02" src="./Imagens/coxinhaFrangoClassica2.jpg" onclick="openImage('coxinhaFrangoClassica2Grande.jpg')"></img>
+                <img class="galeria-fotos-img fotos-img03" src="./Imagens/coxinhaFrangoClassica1.jpg" onclick="openImage('coxinhaFrangoClassica1Grande.jpg')"></img>
+            </div>
+        </div>
+        <div class="ver-todas">
+            <a href="galeria-de-fotos.html">
+                VER TODAS FOTOS
+            </a>
+        </div>
+        <div class="espacamento-duplo"></div>
+    </section>
+    <footer id="rodape">
+        <div class="hr"></div>
+        <div class="wrapper">
+            <div class="rodape-grid">
+                <div class="rodape-item01">
+                    <h4><a href="#rodape">2ª FESTA DA COXINHA DE LIMEIRA</a></h4>
+                    <div class="sociais">
+                        <a href="https://www.instagram.com/prefeituralimeira/" target="_blank"><div class="instagram"></div></a>
+                        <a href="https://www.facebook.com/prefeituralimeira" target="_blank"><div class="facebook"></div></a>
+                        <a href="https://www.youtube.com/PrefLimeira" target="_blank"><div class="youtube"></div></a>
+                    </div>
+                </div>
+                <div class="rodape-item02 clicavel">
+                    <h4>MAPA DO SITE</h4>
+                    <a href="#coxinhas"><p>Coxinhas</p></a>
+                    <a href="#saiba-mais"><p>Saiba Mais</p></a>
+                    <a href="#atracoes"><p>Atrações</p></a>
+                    <a href="#mapa"><p>Mapa da Festa</p></a>
+                </div>
+                <div class="rodape-item03 clicavel">
+                    <h4>&nbsp;</h4>
+                    <a onclick="openIframe('www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.420193815133!2d-47.41564770000001!3d-22.5633824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88066db5f4dcd%3A0x3491ab8491d6ac66!2sParque%20Cidade%20de%20Limeira!5e0!3m2!1spt-BR!2sbr!4v1662825662386!5m2!1spt-BR!2sbr')"><p>Como Chegar</p></a>
+                    <a href="#historia"><p>História da Coxinha</p></a>
+                    <a href="#fotos"><p>Galeria de Fotos</p></a>
+                </div>
+                <!-- <div class="rodape-item04 clicavel">
+                    <h4>OUTROS</h4>
+                    <p>Ajuda</p>
+                    <p>Privacidade</p>
+                </div> -->
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>

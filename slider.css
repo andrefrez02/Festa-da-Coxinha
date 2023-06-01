@@ -1,0 +1,164 @@
+.slider-wrapper{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(20, 100%);
+    grid-template-rows: 250px 75px 125px;
+    row-gap: 25px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.slider-item{
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-item > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-item > div > *{
+    max-height: 100%;
+    text-align: center;
+}
+.slider-item-img > img{
+    margin-top: 40px;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.slider-item-img > img{
+    max-height: 250px;
+}
+.slider-item-h3{
+    min-height: 75px;
+}
+.slider-item-p{
+    min-height: 125px;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 25px;
+}
+.menu-line{
+    width: 20px;
+    height: 1px;
+    border: solid var(--primary-dark) .1px;
+    border-radius: 5px;
+    background: #5c413b;
+    position: relative;
+    margin-left: 7px;
+    z-index: 9999;
+}
+.setas{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    translate: 0 -860%;
+}
+.next-tabela, .previous-tabela{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--secundary-light);
+    border: solid 2px var(--primary-dark);
+    border-radius: 50%;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+.next-tabela > .menu-line{
+    margin: -6px 0px 9px 12px;
+}
+.previous-tabela > .menu-line{
+    margin: -6px 0px 9px 6px;
+}
+.previous-tabela > .line01{
+    rotate: 45deg; 
+    translate: 0px 18px;
+}
+.previous-tabela > .line02{
+    rotate: 135deg;
+    translate: 0px -4px;
+}
+.next-tabela > .line01{
+    rotate: 135deg; 
+    translate: 0px 18px;
+}
+.next-tabela > .line02{
+    rotate: 45deg;
+    translate: 0px -4px;
+}
+.previous-tabela:hover > .menu-line, .next-tabela:hover > .menu-line{
+    cursor: pointer;
+}
+.next-tabela:hover > .menu-line{
+    border-color: blue;
+    background: blue;
+}
+.previous-tabela:hover > .menu-line{
+    border-color: red;
+    background: red;
+}
+.previous-tabela:hover, .next-tabela:hover{
+    cursor: pointer;
+    border-color: white;
+}
+.slider-wrapper::before, .slider-wrapper::after{
+    width: 200px;
+    height: 500px;
+    background: #fffffff2;
+    content: "";
+    position: absolute;
+    filter: blur(25px);
+}
+.slider-wrapper::after{
+    translate: calc(200px + (0px)) 0;
+    transition: .2s ease-in-out;
+    right: 20px;
+}
+.slider-wrapper::before{
+    translate: calc(-220px + (0px)) 0;
+    transition: .2s ease-in-out;
+    left: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .slider-item > div{
+        width: 75%;
+    }
+    .slider-item > div > h3{
+        width: 65%;
+    }
+    .slider-item > div > p{
+        width: 70%;
+    }   
+}
+@media screen and (max-width: 750px) {
+    .slider-item > div{
+        width: 90%;
+    }
+    .slider-item > div > h3{
+        width: 95%;
+    }
+    .slider-item > div > p{
+        width: 80%;
+    }   
+}
+@media screen and (min-width: 1200px) {
+    .slider-item > div{
+        width: 60%;
+    }
+    .slider-item > div > h3{
+        width: 50%;
+    }
+    .slider-item > div > p{
+        width: 55%;
+    }   
+}
